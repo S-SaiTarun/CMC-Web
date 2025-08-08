@@ -251,7 +251,7 @@ nav a:hover{
         justify-content: space-around;
     }
     nav a {
-        font-size: 20px; /* Smaller font size for mobile */
+        font-size: 16px; /* Smaller font size for mobile */
     }
     body{
         margin: 10px auto;
