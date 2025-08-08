@@ -116,7 +116,6 @@ nav a:hover{
     list-style: none;
     gap: 30px;
 }
-
 .layer1 {
     /* Initially hide the layer */
     opacity: 0;
@@ -139,7 +138,6 @@ nav a:hover{
     padding: 10px;
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
-
 .wrapper12 {
     position: relative; /* Essential for positioning .layer1 absolutely within it */
     overflow: hidden; /* To ensure the overlay doesn't spill out if it has animations */
@@ -162,7 +160,6 @@ nav a:hover{
     opacity: 1;
     visibility: visible;
 }
-
 /* Optional: Basic styling for Fphoto and text within layer1 */
 .Fphoto {
     max-width: 100%;
@@ -172,21 +169,17 @@ nav a:hover{
     border-radius: 16px;
     display: block; /* Remove extra space below image */
 }
-
 .layer1 h3 {
     margin-bottom: 5px;
     color: gold;
     text-shadow: 0 0 2px gold,0 0 4px gold,0 0 6px gold ;
 }
-
 .layer1 h4 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #eee;
     text-shadow: 0 0 2px #eee,0 0 4px #eee,0 0 6px #eee ;
-
 }
-
 .layer1 p {
     font-size: 0.9em;
     line-height: 1.4;
@@ -209,9 +202,6 @@ nav a:hover{
     text-align: center;
     justify-content: center;
 }
-
-
-
 .mem-wrapper {
     display:flex;
     gap: 20px;
@@ -239,11 +229,8 @@ nav a:hover{
     margin-bottom: 30px;
 }
 
-
-
 /* mobile screen styles */
 @media screen and (max-width:768px) {
-
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -322,7 +309,6 @@ nav a:hover{
         padding: 10px;
         justify-content: center;
     }
-
     .mem-wrapper {
         flex-wrap: wrap;
         display: flex;
@@ -333,6 +319,4 @@ nav a:hover{
         margin: 20px auto;
         gap: 15px;
     }
-
-    
 }
