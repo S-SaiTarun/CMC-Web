@@ -249,9 +249,13 @@ nav a:hover{
     nav {
         
         justify-content: space-around;
+        display: flex;
+        margin: 10px auto;
+        gap: 8px;
     }
     nav a {
         font-size: 16px; /* Smaller font size for mobile */
+        text-align: center;
     }
     body{
         margin: 10px auto;
@@ -265,6 +269,9 @@ nav a:hover{
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
+    }
+    .section2{
+        margin: 30px auto;
     }
     .clubname{
         font-size:20px;
@@ -285,11 +292,11 @@ nav a:hover{
         width: 100%;
         height: auto;
         font-size: 10px;
-        padding: 10px;
+        padding: 20px;
     }
     .whp{
-        width: 45vw;
-        height: auto;
+        width: 90vw;
+        height: 388.8px;
     }
         .Departments {
         display: grid;
