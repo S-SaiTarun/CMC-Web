@@ -139,9 +139,19 @@ nav a:hover{
         font-size: 14px;
     }
     .whp{
-        width: 30vw;
+        width: 45vw;
         height: auto;
     }
+        .Departments {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mem-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     
 }
 .layer1 {
