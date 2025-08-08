@@ -125,6 +125,20 @@ nav a:hover{
     nav a {
         font-size: 20px; /* Smaller font size for mobile */
     }
+    body{
+        margin: 10px auto;
+        text-align: center;
+    }
+    .rguktheading{
+        font-size: 1.5em;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .clubname{
+        font-size: 1.5em;
+        max-width: 90%;
+        margin: 0 auto;
+    }
     .cabout {
         font-size: 16px;
         margin: 10px;
