@@ -249,7 +249,7 @@ nav a:hover{
         flex-wrap: wrap;
         justify-content: center;
         margin: 10px auto;
-        gap: 10px;
+        gap: 12px;
     }
     nav a {
         font-size: 16px; /* Smaller font size for mobile */
@@ -293,6 +293,7 @@ nav a:hover{
     }
     .Faculty{
         display: flex;
+        margin:10px auto;
         justify-content: center;
     }
     .Department01{
@@ -300,11 +301,11 @@ nav a:hover{
         height: auto;
         font-size: 10px;
         padding: 10px;
-        border-radius: 8%;
+        border-radius: 13%;
         box-sizing: border-box;
     }
     .whp{
-        width: 45vw;
+        width: 90vw;
         height: auto;
     }
         .Departments {
