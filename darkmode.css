@@ -1,3 +1,4 @@
+@media screen and (max-width:768px){
 body{
     background-color: black;
     color: white;
@@ -239,4 +240,5 @@ nav a:hover{
 .headingcontainer1{
     margin-top: 30px;
     margin-bottom: 30px;
+}
 }
