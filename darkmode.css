@@ -283,9 +283,14 @@ nav a:hover{
         text-align: justify;
     }
     .facultylist {
+        display: grid;
         grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
-        width: 90vw;
+        max-width: 90vw;
         justify-items: center;
+        gap: 15px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
     }
     .wrapper12{
         width: 100%;
@@ -295,6 +300,7 @@ nav a:hover{
         display: flex;
         margin:10px auto;
         justify-content: center;
+        padding: 10px 0;
     }
     .Department01{
         width: 90%;
