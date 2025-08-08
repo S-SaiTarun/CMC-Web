@@ -255,21 +255,27 @@ nav a:hover{
     }
     body{
         margin: 10px auto;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .rguktheading{
         font-size: 1.5em;
         max-width: 90%;
         margin: 0 auto;
+        text-align: center;
     }
     .clubname{
         font-size: 1.5em;
         max-width: 90%;
         margin: 0 auto;
+        text-align: center;
     }
     .cabout {
-        font-size: 16px;
+        font-size: 12px;
         margin: 10px;
+        text-align: justify;
     }
     .wrapper12{
         width: 45vw;
