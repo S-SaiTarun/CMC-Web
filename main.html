@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link id="themeStyleSheet" rel="stylesheet" href="darkmode.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+
+        </style>
+        <script>
+            function toggleTheme(){
+                const themeLink=document.getElementById('themeStyleSheet');
+                const current=themeLink.getAttribute('href');
+                if(current==='lightmode.css'){
+                    themeLink.setAttribute('href','darkmode.css');
+                }
+                else{
+                    themeLink.setAttribute('href','lightmode.css')
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>            
+            <nav>  
+                <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </a>
+
+                <a href="#About">About</a>
+                <a href="#Faculty">Faculty Details</a>
+                <a href="#Departments">Departments</a>
+                <a href="#Profiles">Members profiles</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+        </header>
+    <section class="section2">
+        <img src="rguktlogo.jfif" class="rgukt"> <h1 class="rguktheading">Rajiv Gandhi University of Konwledge Technologies<br> Srikakulam Campus-2</h1>
+        <button onclick="toggleTheme()" class="switchtheme">Switch Theme</button>
+
+    </section>
+
+    <section class="clubheading">
+        <img src="cmclogo.jpg" class="cmclogo">
+        <h1 class="clubname">Chamber of Music and Culturals</h1>
+        <div class="cabout"><p id="About">At our core, CMC is a club dedicated to celebrating and developing talent in culturals, music, and arts. We are more than just a creative hub; we are a community that supports skill-building in many areas. Our members can explore their passions through our Cultural team, which covers everything from dance and music to poetry. For those interested in digital media and design, our Technical team handles everything from creating posters and videos along with photography and videography and presentations. Our Organizing team, expertly handling logistics and hosting events, while our Short-film team brings stories to life on screen. Together, we create, learn, and grow as a team.</p></div>
+    </section>
+<div class="headingcontainer1"><h1>Our Faculty</h1></div>
+    <section id="Faculty" class="Faculty">
+        <ol class="facultylist">
+            <li class="wrapper12"><img src="yaminimam.jpg" class="Fphoto"><div class="layer1"><h3>Yamini Madam</h3><h4>(Founder of CMC)</h4><p>About her</p></div></li>
+            <li class="wrapper12"><img src="srilakshmimam.jpg" class="Fphoto"><div class="layer1"><h3>Sri Lakshmi Madam</h3><h4>(HOD Of Culturals)</h4><p>About her</p></div></li>
+            <li class="wrapper12"><img src="keyboardsir.jpg" class="Fphoto"><div class="layer1"><h3>Srinivas sir</h3><h4>(Keyboard Sir)</h4><p>about him</p></div></li>
+            <li class="wrapper12"><img src="violinsir.jpg" class="Fphoto"><div class="layer1"><h3>EshwarRao Sir</h3><h4>(Vioin Faculty)</h4><p>about him</p></div></li>
+            <li class="wrapper12"><img src="tabalasir.jpg" class="Fphoto"><div class="layer1"><h3>Baburao Sir</h3><h4>(Tabala Faculty)</h4><p>about him</p></div></li>
+            <li class="wrapper12"><img src="arts.jpg" class="Fphoto"><div class="layer1"><h3>Mahesh Sir</h3><h4>(FineArts Faculty)</h4><p>about him</p></div></li>
+
+
+        </ol>
+    </section>
+    <div class="headingcontainer1"><h1>Our Teams</h1></div>
+    <section id="Departments" class="Departments">
+        <div class="Department01"><h2>Cultural Team</h2><p>The Cultural Team is where our members' artistic talents shine. With dedicated faculty for vocals, keyboard, violin, and tabla, we offer a strong foundation in Carnatic music. For visual artists, our fine arts section focuses on drawing. The dance group is a vibrant, collaborative space where juniors learn and grow through guidance from their senior peers. This team is a place to develop new skills, find your rhythm, and express yourself through music, art, and dance.</p></div>
+        <div class="Department01"><h2>Technical Team</h2><p>The Technical Team is the backbone of our club, powering every event behind the scenes. This team is a workshop for developing practical skills, from designing posters, Trailer Videos,Edits and digital invitations to managing our social media and all videography, photography.Managing recruitment forms, filtering data, and creating presentations.We learn by doing simple, engaging tasks, like designing a logo or capturing a great photo,and build our skills in a supportive environment.</p></div>
+        <div class="Department01"><h2>Organizing Team</h2><p>The Organizing Team is the engine that drives all our events. This group is responsible for all the behind-the-scenes work that makes our activities run smoothly. From creating event schedules and managing performance timings to coordinating stage setups and handling logistics, they ensure every event is a success. Their detailed planning and dedication are key to creating memorable experiences for both our members and our audience.</p></div>
+        <div class="Department01"><h2>Films Team</h2><p>The Films Team is where our stories come to life on screen. This team is dedicated to acting in and producing high-quality short films and engaging trailers. Their work is essential for showcasing the club's creative spirit and a great way to attract an audience. Through compelling visuals and storytelling, they create content that not only entertains but also highlights the talent within our community.</p></div>
+    </section>
+
+        <div class="headingcontainer1"><h1>Check Our Members</h1>
+    <div id="Profiles">
+        <section class="profiles">
+            
+<div class="mem-wrapper">
+    <div class="mems"><img src="members.jpg" class="whp"></div>
+    <div class="batchs23"><img src="2k23.jpg" class="whp"></div>
+    <div class="batchs24"><img src="2k24.jpg" class="whp"></div>
+</div>
+    
+        </section>
+    </div>
+    </div>
+    <footer></footer>
+    </body>
+</html>
