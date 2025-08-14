@@ -1,245 +1,317 @@
-body {
-    background-color: #f0f2f5; /* Light gray background */
-    color: #333; /* Dark gray text */
-    align-items: center;
-    justify-content: center;
+body{
+    background-color:#ddd;
+    color: black;
 }
-
-.rgukt {
+.rgukt{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: 1px #d32f2f solid; /* Darker red border */
+    border: 1px red solid;
     margin-top: 20px;
 }
-
-.rguktheading {
-    color: #ff9800; /* Orange color */
+.rguktheading{
+    color: greenyellow;
     font-size: 30px;
     transition: 0.5s ease-in-out;
     text-align: center;
 }
-
-.rguktheading:hover {
-    text-shadow: 0 0 5px #ffb74d, 0 0 10px #ffb74d, 0 0 15px #ffb74d; /* Lighter orange glow */
+.rguktheading:hover{
+    transform: scale(1.10);
 }
-
-.section2 {
+.section2{
     display: flex;
     gap: 20px;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-
-.switchtheme {
+.switchtheme{
     margin-top: 40px;
     height: 30px;
     width: 130px;
     border-radius: 32px;
-    background-color: #fff; /* White background for the button */
-    color: #333; /* Dark text for the button */
-    border: 2px #00bcd4 solid; /* Cyan border */
+    background-color: white;
+    color: black;
+    border: 2px cyan black;
 }
-
-.cmclogo {
+.cmclogo{
     height: 100px;
-    width: 100px;
+    width :100px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 2px solid #fbc02d; /* Darker gold border */
+    border: 2px solid gold;
     transition: all 0.6s ease-in-out;
 }
-
-.cmclogo:hover {
+.cmclogo:hover{
     transform: scale(1.2);
-    border: 2px solid #fbc02d;
-    box-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b, 0 0 15px #ffeb3b; /* Gold glow */
+    border: 2px solid gold;
 }
-
-.clubheading {
+.clubheading{
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
-
-.cabout {
-    width: 600px;
+.cabout{
+    margin: 20px;
     text-align: center;
     font-size: 20px;
     overflow: hidden;
-}
 
-.clubname {
+}
+.clubname{
     font-size: 40px;
     font-weight: bold;
-    color: #f44336; /* Darker red */
+     color: red;
     transition: all 0.5s ease;
 }
-
-.clubname:hover {
+.clubname:hover{
     transform: scale(1.10);
-    color: #8bc34a; /* A different, bright green */
-    text-shadow: 0 0 2px #cddc39, 0 0 4px #cddc39, 0 0 6px #cddc39; /* Green glow */
 }
-
-nav {
-    background-color: #fff; /* White background for nav */
-    padding: 10px 0;
+nav{
+    background-color: #ddd;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
     gap: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    margin: 20px;
 }
-
-nav a {
-    color: #555; /* Dark gray for nav links */
+nav a{
+    color: black;
     cursor: pointer;
     font-size: 25px;
     text-decoration: none;
-    transition: 0.5s ease-in-out;
+    transition:0.5s ease-in-out;
 }
-
-nav a:hover {
-    color: #ffc107; /* Amber color on hover */
-    text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b, 0 0 15px #ffeb3b; /* Yellow glow */
+nav a:hover{
+    color: blue;
+    border-bottom: red 1px solid;
 }
-
-.Faculty {
+@media screen and (max-width: 768px) {
+  
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .facultylist {
+    grid-template-columns: 1fr;
+  }
+.Department01{
+      height: auto;
+      width: 80vw;
+}
+}
+.Faculty{
     display: flex;
     gap: 15px;
     justify-content: center;
     margin-bottom: 20px;
 }
-
-.facultylist {
+.facultylist{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
     list-style: none;
     gap: 30px;
 }
-
 .layer1 {
+    /* Initially hide the layer */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    position: absolute;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+
+    /* Positioning and styling for the overlay */
+    position: absolute; /* Or adjust based on your layout needs */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-    color: #333; /* Dark text */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent black background */
+    color: black; /* Text color */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
-
 .wrapper12 {
-    position: relative;
-    overflow: hidden;
-    width: 180px;
-    height: 260px;
+    position: relative; /* Essential for positioning .layer1 absolutely within it */
+    overflow: hidden; /* To ensure the overlay doesn't spill out if it has animations */
+    /* Add any other styling for your list items, e.g., width, height, margin, border */
+    width: 180px; /* Example width */
+    height: 260px; /* Example height */
     margin: 10px;
     border-radius: 18px;
-    border: 2px solid #ccc;
-    display: flex;
+    border: 2px solid #333;
+    display: flex; /* If you want to center the image or other content */
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease-in-out;
 }
-
-.wrapper12:hover {
-    border: 2px solid #4caf50; /* Green border on hover */
-    box-shadow: 0 0 2px #81c784, 0 0 4px #81c784, 0 0 6px #81c784; /* Lighter green glow */
+.wrapper12:hover{
+    border: 2px solid #0c0;
+    box-shadow: 0 0 2px #0c0,0 0 4px #0c0,0 0 6px #0c0;
 }
-
 .wrapper12:hover .layer1 {
     opacity: 1;
     visibility: visible;
 }
-
+/* Optional: Basic styling for Fphoto and text within layer1 */
 .Fphoto {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
     height: 100%;
     border-radius: 16px;
-    display: block;
+    display: block; /* Remove extra space below image */
 }
-
 .layer1 h3 {
     margin-bottom: 5px;
-    color: #ffc107; /* Amber color */
-    text-shadow: 0 0 2px #ffeb3b, 0 0 4px #ffeb3b, 0 0 6px #ffeb3b; /* Gold glow */
+    color: goldenrod;
 }
-
 .layer1 h4 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #666; /* Darker text */
-    text-shadow: 0 0 2px #ccc, 0 0 4px #ccc, 0 0 6px #ccc;
+    color: #000;
 }
-
 .layer1 p {
     font-size: 0.9em;
     line-height: 1.4;
 }
-
-.Departments {
+.Departments{
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 20px; 
+    justify-content:center;
     margin-top: 50px;
     margin-bottom: 30px;
 }
-
-.Department01 {
+.Department01{
     height: 480px;
-    width: 200px;
+    width: 25vw;
     border-radius: 8px;
-    border: #00bcd4 1px solid; /* Cyan border */
+    border: cyan 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-
 .mem-wrapper {
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    display:flex;
+    gap: 20px;
+    justify-content:space-around;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 20px auto;
 }
-
-.whp {
-    height: 250px;
-    width: 332px;
+.whp{
+    height: auto;
+    width: 30vw;
     border-radius: 8%;
     border: none;
-    transition: all 0.5s ease;
+    transition:all 0.5s ease;
 }
-
-.whp:hover {
+.whp:hover{
     transform: scale(1.10);
-    border: #333 2px solid; /* Dark border on hover */
-    box-shadow: 0 0 5px #757575, 0 0 10px #757575, 0 0 15px #757575; /* Gray glow */
-}
-
-.headingcontainer1 h1 {
+    border: #333 2px solid;
+    box-shadow:0 0 5px cyan, 0 0 10px cyan,0 0 15px cyan ;
+}        
+.headingcontainer1 h1{
     text-align: center;
 }
-
-.headingcontainer1 {
+.headingcontainer1{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/* mobile screen styles */
+@media screen and (max-width:768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px auto;
+        gap: 12px;
+    }
+    nav a {
+        font-size: 16px; /* Smaller font size for mobile */
+        text-align: center;
+    }
+    body{
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .rguktheading{
+        font-size: 18px;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section2{
+        margin: 30px auto;
+    }
+    .clubname{
+        font-size:20px;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cabout {
+        font-size: 12px;
+        margin: 10px;
+        text-align: justify;
+    }
+    .facultylist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
+        max-width: 90vw;
+        justify-items: center;
+        gap: 15px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .wrapper12{
+        width: 100%;
+        height: auto;
+    }
+    .Faculty{
+        display: flex;
+        margin:10px auto;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .Department01{
+        width: 90%;
+        height: auto;
+        display: flex;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 16%;
+        box-sizing: border-box;
+    }
+    .whp{
+        width: 90vw;
+        height: auto;
+    }
+        .Departments {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .mem-wrapper {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+        margin: 20px auto;
+        gap: 15px;
+    }
 }
