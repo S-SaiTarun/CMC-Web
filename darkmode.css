@@ -10,13 +10,13 @@ body{
     margin-top: 20px;
 }
 .rguktheading{
-    color: lightyellow;
+    color: limegreen;
     font-size: 30px;
     transition: 0.5s ease-in-out;
     text-align: center;
 }
 .rguktheading:hover{
-        text-shadow: 0 0 5px yellow,0 0 10px yellow,0 0 15px yellow;
+        text-shadow: 0 0 5px limegreen,0 0 10px limegreen,0 0 15px limegreen;
 }
 .section2{
     display: flex;
@@ -27,7 +27,7 @@ body{
 .switchtheme{
     margin-top: 40px;
     height: 30px;
-    width: 130px;
+    width: 30px;
     border-radius: 32px;
     background-color: black;
     color: white;
